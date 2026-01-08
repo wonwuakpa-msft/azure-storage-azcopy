@@ -80,7 +80,7 @@ extends:
                 env:
                   GO111MODULE: 'on'
                 inputs:
-                  version: $(AZCOPY_GOLANG_VERSION)
+                  version: '$(AZCOPY_GOLANG_VERSION)'
 
               - script: |
                   go build -tags "netgo" -o azcopy_bin
